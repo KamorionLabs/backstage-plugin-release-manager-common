@@ -1,0 +1,35 @@
+{
+  "name": "@kamorionlabs/backstage-plugin-release-manager-common",
+  "version": "0.1.0",
+  "description": "Shared types and utilities for Backstage Release Manager plugins",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KamorionLabs/backstage-plugin-release-manager-common.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "backstage": {
+    "role": "common-library"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "backstage-cli package build",
+    "clean": "backstage-cli package clean",
+    "lint": "backstage-cli package lint",
+    "test": "backstage-cli package test",
+    "prepack": "backstage-cli package prepack",
+    "postpack": "backstage-cli package postpack"
+  },
+  "devDependencies": {
+    "@backstage/cli": "^0.27.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
